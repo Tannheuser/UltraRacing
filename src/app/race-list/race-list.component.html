@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let race of races">
+    <race [race]="race"></race>
+  </li>
+</ul>
+<h2>Total cost: {{totalCost() | currency:'USD':true}}</h2>
