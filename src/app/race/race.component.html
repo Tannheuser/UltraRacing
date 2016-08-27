@@ -1,5 +1,5 @@
-<h2>{{race.name}} {{race.entryFee | currency:'USD':true }}</h2>
-<p>{{race.date | date:'MMM d, y, h:mm a'}}</p>
-<p>{{race.about}}</p>
+<h3>{{race.name}} {{race.entryFee | currency:'USD':true }}</h3>
+<p class="date">{{race.date | date:'MMM d, y, h:mm a'}}</p>
+<p class="description">{{race.about}}</p>
 <button *ngIf="!race.isRacing" >Enter Race</button>
-<h3  *ngIf="race.isRacing">Already Racing</h3>
+<p *ngIf="race.isRacing">Already Racing</p>

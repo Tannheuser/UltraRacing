@@ -1,6 +1,30 @@
-h2 {
-    color: green;
+h3 {
+    font-size: 20px;
+    text-transform: uppercase;
 }
-p {
-    font-size: small;
+
+.date, .price {
+    color: #9397d8;
+}
+
+.description {
+    color: #66d9f7;
+}
+
+.photo {
+    float: left;
+    margin-right: 30px;
+}
+
+.button-cancel[_ngcontent-bdh-2] {
+    background: none;
+    border: 0;
+    color: #fd79fc;
+    text-decoration: underline;
+    width: 120px;
+}
+
+.status[_ngcontent-bdh-2] {
+    color: #fd79fc;
+    text-align: center;
 }
