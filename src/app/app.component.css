@@ -1,0 +1,18 @@
+.heading {
+    background-color: #9d1a76;
+    background-image: url(../images/head.jpg);
+    background-position: bottom,center;
+    background-size: auto,auto;
+    background-repeat: no-repeat,repeat-x;
+    height: 200px;
+    position: relative;
+}
+
+.heading h1 {
+    text-align: center;
+    padding: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-shadow: 2px 1px #9397d8;
+    color: #66d9f7;
+}

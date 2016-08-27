@@ -1,7 +1,16 @@
+h1 {
+    font-weight: 300;
+}
+
 h2 {
     color: #9397d8;
     font-size: 22px;
     font-weight: 400;
+}
+
+h3 {
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 ul {
@@ -9,10 +18,21 @@ ul {
     padding: 0;
 }
 
+li {
+    margin-bottom: 30px;
+}
+
+.races-list {
+    margin-top: 20px;
+}
+
+.card {
+    background: #24262c;
+}
+
 .price-total {
     background: #9179b7;
     float: right;
-    margin: 30px 0;
     padding: 20px 50px;
     text-transform: uppercase;
 }
@@ -20,25 +40,17 @@ ul {
 .price-total h3 {
     font-size: 18px;
     margin-right: 60px;
+    font-weight: 300;
 }
 
 .price-total h3, .price-total p {
-  display: inline-block;
-  margin: 0;
-}
+    display: inline-block;
+    margin: 0;
 
-h3 {
-  font-size: 20px;
-  text-transform: uppercase;
 }
 
 .price-total p {
-  color: #362751;
-  font-size: 18px;
-  font-weight: bold;
-}
+    color: #362751;
+    font-size: 18px;
 
-.price-total h3, .price-total p {
-  display: inline-block;
-  margin: 0;
 }

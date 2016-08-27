@@ -9,5 +9,5 @@ import { RaceListComponent } from './race-list/race-list.component'
     directives: [RaceListComponent]
 })
 export class AppComponent {
-    title = 'Ultra Racing Schedule';
+    title = 'Ultra Racing';
 }
