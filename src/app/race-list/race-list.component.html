@@ -1,6 +1,10 @@
-<ul>
-  <li *ngFor="let race of races">
+<h1>Schedule</h1>
+<ul class="races-list">
+  <li *ngFor="let race of races" class="card">
     <race [race]="race"></race>
   </li>
 </ul>
-<h2>Total cost: {{totalCost() | currency:'USD':true}}</h2>
+<div class="price-total">
+    <h3>Total cost:</h3>
+    <p>{{totalCost() | currency:'USD':true}}</p>
+</div>

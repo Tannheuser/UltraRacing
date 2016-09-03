@@ -11,6 +11,7 @@ import { RACES } from '../mocks';
     directives: [RaceComponent]
 })
 export class RaceListComponent {
+    cash = 10000;
     races: Race[];
 
     totalCost() {
@@ -19,6 +20,10 @@ export class RaceListComponent {
 
     ngOnInit() {
         this.races = RACES;
-    }
+    };
+
+    cashLeft() {
+        return this.cash - this.totalCost();
+    };
 
 }

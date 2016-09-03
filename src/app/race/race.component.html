@@ -1,5 +1,35 @@
-<h2>{{race.name}} {{race.entryFee | currency:'USD':true }}</h2>
-<p>{{race.date | date:'MMM d, y, h:mm a'}}</p>
-<p>{{race.about}}</p>
-<button *ngIf="!race.isRacing" >Enter Race</button>
-<h3  *ngIf="race.isRacing">Already Racing</h3>
+<div class="row">
+    <div class="container-fluid">
+        <div class="row race">
+            <div class="col-sm-2">
+                <img [src]="race.image" [alt]="race.imageDescription" class="img-responsive">
+            </div>
+            <div class="col-sm-10 race-info">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <h3>{{race.name}}</h3>
+                    </div>
+                    <div class="col-sm-2">
+                        <h3 class="price text-center">{{race.entryFee | currency:'USD':true }}</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10">
+                        <p class="date">{{race.date | date:'d MMM y'}} <i class="fa fa-clock-o"></i>{{race.date | date:'HH:mm'}}</p>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <button *ngIf="!race.isRacing" class="btn btn-sm">Enter Race</button>
+                        <p *ngIf="race.isRacing" class="status">Racing</p>
+                    </div>
+                </div>
+                <div class="row description">
+                    <div class="col-sm-12">
+                        <p>{{race.about}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
