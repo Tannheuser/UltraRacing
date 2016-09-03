@@ -1,5 +1,5 @@
-# Ultra Racing
-Angular2 test project based on CodeSchool tutorial.
+# UltraRacing
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.10.
 
 ## Development server

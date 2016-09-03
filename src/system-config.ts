@@ -39,6 +39,7 @@ const barrels: string[] = [
   'app/race-component',
   'app/race',
   'app/race-list',
+  'app/garage',
   /** @cli-barrel */
 ];
 
