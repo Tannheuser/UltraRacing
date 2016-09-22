@@ -1,4 +1,6 @@
 import { Race } from './model/race';
+import {Profile} from "./model/profile";
+import {Penalty} from "./model/penalty";
 
 export const RACES: Race[] = [{
         "id": 1,
@@ -28,3 +30,14 @@ export const RACES: Race[] = [{
         "image": "/images/new_york_city_skyline.jpg",
         "imageDescription": "Bridge overlooking New York City"
     }];
+
+export const PROFILE: Profile = {
+    id: 1,
+    nickname: 'Windblow',
+    cache: 10000,
+    carsCount: 0,
+    rating: 0,
+    experience: 0,
+    races: null,
+    penalties: null
+};
