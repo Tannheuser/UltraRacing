@@ -6,9 +6,10 @@
     <div class="navbar">
         <div class="collapse navbar-collapse navbar-right container">
             <ul class="nav navbar-nav">
-                <li *ngFor="#item of menu" [class.active] ="item.active">
+                <li *ngFor="let item of menu" [class.active] ="item.active">
                     <a href="#" [innerHTML]="item.title"></a>
                 </li>
+
             </ul>
         </div>
     </div>

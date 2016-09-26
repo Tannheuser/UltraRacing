@@ -1,0 +1,26 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
+import { AppComponent } from './app.component';
+import {RaceListComponent} from "./race-list/race-list.component";
+import {RaceComponent} from "./race/race.component";
+import {ProfileComponent} from "./profile/profile.component";
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    RaceListComponent,
+    RaceComponent,
+    ProfileComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

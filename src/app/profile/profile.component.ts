@@ -3,7 +3,6 @@ import {Profile} from "../model/profile";
 import {PROFILE} from "../mocks";
 
 @Component({
-    moduleId: module.id,
     selector: 'driver-profile',
     templateUrl: 'profile.component.html',
     styleUrls: ['profile.component.css']

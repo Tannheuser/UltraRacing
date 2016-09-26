@@ -1,21 +1,23 @@
 import { Component } from '@angular/core';
 import { RaceListComponent } from './race-list/race-list.component'
 import { MenuItem } from './model/menuItem'
-import {ProfileComponent} from "./profile/profile.component";
+import { NgModule } from "@angular/core/src/metadata/ng_module";
+
+@NgModule({
+  declarations: [ RaceListComponent ]
+})
 
 @Component({
-    moduleId: module.id,
     selector: 'app-root',
     templateUrl: 'app.component.html',
-    styleUrls: ['app.component.css'],
-    directives: [RaceListComponent, ProfileComponent]
+    styleUrls: ['app.component.css']
 })
 export class AppComponent {
   title = 'Ultra Racing';
   menu: MenuItem[] = [
     {
       title: 'home',
-      active: false
+      active: true
 
     }, {
       title: 'races',
@@ -28,6 +30,6 @@ export class AppComponent {
       active: false
     },{
       title: '<i class="fa fa-user"></i>',
-      active: true
+      active: false
     }];
 }

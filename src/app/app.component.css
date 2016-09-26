@@ -50,11 +50,11 @@
   background-color: transparent;
 }
 
-/*@-webkit-keyframes neonOne {*/
-    /*from {*/
-        /*text-shadow: 0 0 10px #9397d8, 0 0 20px #9397d8, 0 0 30px #9397d8, 0 0 40px #66d9f7, 0 0 70px #66d9f7, 0 0 80px #66d9f7, 0 0 100px #66d9f7, 0 0 150px #66d9f7;*/
-    /*}*/
-    /*to {*/
-        /*text-shadow: 0 0 5px #9397d8, 0 0 10px #9397d8, 0 0 15px #9397d8, 0 0 20px #66d9f7, 0 0 35px #66d9f7, 0 0 40px #66d9f7, 0 0 50px #66d9f7, 0 0 75px #66d9f7;*/
-    /*}*/
-/*}*/
+@-webkit-keyframes neonOne {
+    from {
+        text-shadow: 0 0 10px #9397d8, 0 0 20px #9397d8, 0 0 30px #9397d8, 0 0 40px #66d9f7, 0 0 70px #66d9f7, 0 0 80px #66d9f7, 0 0 100px #66d9f7, 0 0 150px #66d9f7;
+    }
+    to {
+        text-shadow: 0 0 5px #9397d8, 0 0 10px #9397d8, 0 0 15px #9397d8, 0 0 20px #66d9f7, 0 0 35px #66d9f7, 0 0 40px #66d9f7, 0 0 50px #66d9f7, 0 0 75px #66d9f7;
+    }
+}

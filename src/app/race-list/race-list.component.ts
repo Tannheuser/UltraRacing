@@ -2,13 +2,17 @@ import { Component } from '@angular/core';
 import { RaceComponent } from '../race/race.component';
 import { Race } from '../model/race';
 import { RACES } from '../mocks';
+import { NgModule } from "@angular/core/src/metadata/ng_module";
+
+@NgModule({
+  imports:      [ RaceComponent],
+  declarations: [ RaceComponent ]
+})
 
 @Component({
-    moduleId: module.id,
     selector: 'race-list',
     templateUrl: 'race-list.component.html',
-    styleUrls: ['race-list.component.css'],
-    directives: [RaceComponent]
+    styleUrls: ['race-list.component.css']
 })
 export class RaceListComponent {
     cash = 10000;
