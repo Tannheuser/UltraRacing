@@ -9,8 +9,4 @@ import { ProfileComponent } from "./profile.component";
     exports: [ ProfileComponent ],
     providers: []
 })
-export class ProfileModule {
-
-    constructor() { }
-
-}
+export class ProfileModule {}

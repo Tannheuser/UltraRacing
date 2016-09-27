@@ -1,4 +1,4 @@
 export class MenuItem {
-  title: string;
-  active: boolean;
+    title: string;
+    path: string;
 }

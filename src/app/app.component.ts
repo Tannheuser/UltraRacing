@@ -4,7 +4,7 @@ import { MenuItem } from './model/menuItem'
 import { NgModule } from "@angular/core/src/metadata/ng_module";
 
 @NgModule({
-  declarations: [ RaceListComponent ]
+    declarations: [RaceListComponent]
 })
 
 @Component({
@@ -13,23 +13,26 @@ import { NgModule } from "@angular/core/src/metadata/ng_module";
     styleUrls: ['app.component.css']
 })
 export class AppComponent {
-  title = 'Ultra Racing';
-  menu: MenuItem[] = [
-    {
-      title: 'home',
-      active: true
-
-    }, {
-      title: 'races',
-      active: false
-    }, {
-      title: 'shop',
-      active: false
-    }, {
-      title: 'garage',
-      active: false
-    },{
-      title: '<i class="fa fa-user"></i>',
-      active: false
-    }];
+    title = 'Ultra Racing';
+    menu: MenuItem[] = [
+        {
+            title: 'home',
+            path: '/home'
+        },
+        {
+            title: 'races',
+            path: '/races'
+        },
+        {
+            title: 'shop',
+            path: '/shop'
+        },
+        {
+            title: 'garage',
+            path: '/garage'
+        },
+        {
+            title: '<i class="fa fa-user"></i>',
+            path: '/profile'
+        }];
 }
