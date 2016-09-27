@@ -1,0 +1,30 @@
+.profile {
+    color: #66d9f7;
+}
+
+.photo {
+    width: 40px;
+    height: 40px;
+    font-size: 2.2em;
+    text-align: center;
+    border: #66d9f7 1px solid;
+    margin-top: 10px;
+    -webkit-animation: neonBorder 1.5s ease-in-out infinite alternate;
+    -moz-animation: neonBorder 1.5s ease-in-out infinite alternate;
+    animation: neonBorder 1.5s ease-in-out infinite alternate;
+}
+
+.right-panel {
+    padding-top: 14px;
+    color: #9397d8;
+}
+
+.summary span {
+    margin-left: 30px;
+    font-weight: 300;
+}
+
+
+.car {
+    color: #9397d8;
+}
