@@ -35,9 +35,9 @@ export const PROFILE: Profile = {
     id: 1,
     nickname: 'Windblow',
     cache: 10000,
-    carsCount: 0,
-    rating: 0,
-    experience: 0,
+    carsCount: 1,
+    rating: 1023,
+    experience: 523,
     races: null,
     penalties: null
 };
