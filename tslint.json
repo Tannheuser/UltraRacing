@@ -105,13 +105,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "racing",
+      "ur",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "racing",
+      "ur",
       "kebab-case"
     ],
     "use-input-property-decorator": true,

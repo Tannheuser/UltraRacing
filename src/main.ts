@@ -1,7 +1,7 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { RacingModule } from './app/racing-root.module';
+import { RacingModule } from './app/ur-root.module';
 import { environment } from './environments/environment';
 
 if (environment.production) {
