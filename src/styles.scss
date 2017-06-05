@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  height: 100%;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(#0d263c,#030714) no-repeat fixed;
+  color: #ffffff;
+  height: 100%;
+}
+
+h1 {
+  color: #66d9f7;
+}
+
+button {
+  background: #fd79fc;
+  border-radius: 3px;
+  border: 0;
+  color: #ffffff;
+  width: 120px;
+}
+
+@-webkit-keyframes neonOne {
+  //from {
+  //  text-shadow: 0 0 10px #9397d8, 0 0 20px #9397d8, 0 0 30px #9397d8, 0 0 40px #66d9f7, 0 0 70px #66d9f7, 0 0 80px #66d9f7, 0 0 100px #66d9f7, 0 0 150px #66d9f7;
+  //}
+  //to {
+  //  text-shadow: 0 0 5px #9397d8, 0 0 10px #9397d8, 0 0 15px #9397d8, 0 0 20px #66d9f7, 0 0 35px #66d9f7, 0 0 40px #66d9f7, 0 0 50px #66d9f7, 0 0 75px #66d9f7;
+  //}
+}
+
+@-webkit-keyframes neonBorder {
+  //from {
+  //  box-shadow: 0 0 2px #9397d8, 0 0 4px #9397d8, 0 0 6px #9397d8, 0 0 8px #66d9f7, 0 0 10px #66d9f7, 0 0 12px #66d9f7, 0 0 14px #66d9f7, 0 0 16px #66d9f7;
+  //}
+  //to {
+  //  box-shadow: 0 0 1px #9397d8, 0 0 2px #9397d8, 0 0 3px #9397d8, 0 0 4px #66d9f7, 0 0 5px #66d9f7, 0 0 6px #66d9f7, 0 0 7px #66d9f7, 0 0 8px #66d9f7;
+  //}
+}
