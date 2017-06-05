@@ -8,8 +8,8 @@ import { RACES } from '../../mock/races';
   styleUrls: ['./race-list.component.scss']
 })
 export class RaceListComponent implements OnInit {
-  private races: Race[];
-  private cash: number = 10000;
+  races: Race[];
+  cash: number = 10000;
   constructor() { }
 
   ngOnInit() {
