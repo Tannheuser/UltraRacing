@@ -1,10 +1,10 @@
-import { UltraRacingPage } from './app.po';
+import { UltraRacingTemplatePage } from './app.po';
 
-describe('ultra-racing App', function() {
-  let page: UltraRacingPage;
+describe('ultra-racing-template App', () => {
+  let page: UltraRacingTemplatePage;
 
   beforeEach(() => {
-    page = new UltraRacingPage();
+    page = new UltraRacingTemplatePage();
   });
 
   it('should display message saying app works', () => {
