@@ -35,64 +35,22 @@ li {
   float: right;
   padding: 20px 50px;
   text-transform: uppercase;
-}
 
-.price-total h3 {
-  font-size: 18px;
-  margin-right: 60px;
-  font-weight: 300;
-}
+  h3 {
+    font-size: 18px;
+    margin-right: 60px;
+    font-weight: 300;
+  }
 
-.price-total h3, .price-total p {
-  display: inline-block;
-  margin: 0;
+  h3, p {
+    display: inline-block;
+    margin: 0;
+  }
 
-}
-
-.price-total p {
-  color: #362751;
-  font-size: 18px;
-
-}
-
-
-//Race
-h3 {
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-.race {
-}
-
-.race-image {
-  position: relative;
-  width: auto;
-}
-
-.race-info {
-
-}
-
-.race-info h3 {
-  font-weight: 300;
-}
-
-.date, .price {
-  color: #9397d8;
-}
-
-.date {
-  font-size: 16px;
-}
-
-.description {
-  font-size: 16px;
-  color: #66d9f7;
-}
-
-.photo {
-  float: left;
+  p {
+    color: #362751;
+    font-size: 18px;
+  }
 }
 
 .button-cancel{
@@ -103,7 +61,4 @@ h3 {
   width: 120px;
 }
 
-.status {
-  color: #fd79fc;
-  text-align: center;
-}
+

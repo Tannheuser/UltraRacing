@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {Race } from '../../model/race';
+import { Component, Input, OnInit } from '@angular/core';
+import { Race } from '../../model/race';
 
 @Component({
   selector: 'ur-race',
@@ -7,7 +7,8 @@ import {Race } from '../../model/race';
   styleUrls: ['./race.component.scss']
 })
 export class RaceComponent implements OnInit {
-  private Race: Race;
+  @Input() race: Race;
+
   constructor() { }
 
   ngOnInit() {
