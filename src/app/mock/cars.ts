@@ -1,5 +1,7 @@
 import {Car} from '../model/car';
 import {Engine} from '../model/engine';
+import {Damage} from '../model/damage';
+import {DamageRate} from '../model/damageRate';
 
 export const CARS: Car[] = [{
   manufacturer: 'VW',
@@ -11,7 +13,7 @@ export const CARS: Car[] = [{
   mileage: 59768,
   imagePath: '/assets/img/c/golf2.jpg',
   engine: new Engine('1.8 GTI 16v', 1.8, 137, 168),
-  damage: null
+  damage: new Damage(DamageRate.None, DamageRate.Low, DamageRate.Medium, DamageRate.Low, DamageRate.Low)
 }, {
   manufacturer: 'Audi',
   model: '100',
@@ -22,7 +24,7 @@ export const CARS: Car[] = [{
   mileage: 61057,
   imagePath: '/assets/img/c/a100_91.jpg',
   engine: new Engine('2.3 L I-5', 2.3, 134, 160),
-  damage: null
+  damage: new Damage(DamageRate.None, DamageRate.Low, DamageRate.Medium, DamageRate.Low, DamageRate.Low)
 }, {
   manufacturer: 'Toyota',
   model: 'Corolla Levin',
@@ -33,7 +35,7 @@ export const CARS: Car[] = [{
   mileage: 44113,
   imagePath: '/assets/img/c/ae_86.jpg',
   engine: new Engine('1.6 GT (4A-GEU)', 1.6, 130, 149),
-  damage: null
+  damage: new Damage(DamageRate.None, DamageRate.None, DamageRate.Low, DamageRate.Medium, DamageRate.Low)
 }, {
   manufacturer: 'BMW',
   model: 'M3',
@@ -44,7 +46,7 @@ export const CARS: Car[] = [{
   mileage: 73678,
   imagePath: '/assets/img/c/m3_85.jpg',
   engine: new Engine('2.0 I6 (M20B20)', 2.0, 129, 174),
-  damage: null
+  damage: new Damage(DamageRate.Medium, DamageRate.Low, DamageRate.None, DamageRate.None, DamageRate.Low)
 }, {
   manufacturer: 'Mazda',
   model: 'RX7 Savanna',
@@ -55,5 +57,5 @@ export const CARS: Car[] = [{
   mileage: 39560,
   imagePath: '/assets/img/c/rx7_c.jpg',
   engine: new Engine('1.3 GT (13B)', 1.3, 185, 245),
-  damage: null
+  damage: new Damage(DamageRate.Low, DamageRate.Low, DamageRate.None, DamageRate.Medium, DamageRate.Low)
 }];
