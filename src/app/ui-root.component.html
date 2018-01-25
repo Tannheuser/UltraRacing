@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="heading">
+    <h1>{{title}}</h1>
+  </div>
+  <nav class="nav justify-content-end">
+      <a *ngFor="let item of menu" [href]="item.path" [innerHTML]="item.title" class="nav-item nav-link"></a>
+  </nav>
+  <!--<ur-race-list></ur-race-list>-->
+</div>
