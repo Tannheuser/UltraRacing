@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
-import { MenuItem } from './model/menuItem';
+import { Component, OnInit } from '@angular/core';
+import { MenuItem } from '../../model/menuItem';
 
 @Component({
-  selector: 'ur-root',
-  templateUrl: './ur-root.component.html',
-  styleUrls: ['./ur-root.component.scss']
+  selector: 'ur-navbar-component',
+  templateUrl: './navbar-component.component.html',
+  styleUrls: ['./navbar-component.component.scss']
 })
-export class RootComponent {
-  title = 'Ultra Racing';
+export class NavbarComponentComponent implements OnInit {
   menu: MenuItem[] = [
     {
       title: 'home',
@@ -29,5 +28,9 @@ export class RootComponent {
       title: '<i class="fa fa-user"></i>',
       path: '/profile'
     }];
-}
 
+  constructor() { }
+
+  ngOnInit() {
+  }
+}

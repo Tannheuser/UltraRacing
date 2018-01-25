@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class UltraRacingTemplatePage {
+export class UltraRacingPage {
   navigateTo() {
     return browser.get('/');
   }

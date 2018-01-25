@@ -3,15 +3,13 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { RootComponent } from './ur-root.component';
-import { RaceComponent } from './races/race/race.component';
-import { RaceListComponent } from './races/race-list/race-list.component';
+import { AppComponent } from './ui-root.component';
+import { NavbarComponentComponent } from './components/navbar-component/navbar-component.component';
 
 @NgModule({
   declarations: [
-    RootComponent,
-    RaceComponent,
-    RaceListComponent
+    AppComponent,
+    NavbarComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -19,6 +17,6 @@ import { RaceListComponent } from './races/race-list/race-list.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [RootComponent]
+  bootstrap: [AppComponent]
 })
-export class RacingModule { }
+export class UiRootModule { }

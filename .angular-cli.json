@@ -19,10 +19,9 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "ur",
       "styles": [
+        "sass/styles.scss",
         "../node_modules/bootstrap/dist/css/bootstrap.css",
-        "../node_modules/font-awesome/scss/font-awesome.scss",
-        "../node_modules/lato-font/scss/lato-font.scss",
-        "styles.scss"
+        "../node_modules/font-awesome/css/font-awesome.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -55,6 +54,7 @@
   },
   "defaults": {
     "styleExt": "scss",
-    "component": {}
+    "component": {
+    }
   }
 }
