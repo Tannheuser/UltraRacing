@@ -1,0 +1,53 @@
+.mat-toolbar {
+  background: none;
+
+  .navigation-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #66d9f7;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: transparent;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-animation: neonOne 1.5s ease-in-out infinite alternate;
+    -moz-animation: neonOne 1.5s ease-in-out infinite alternate;
+    animation: neonOne 1.5s ease-in-out infinite alternate;
+
+    &:hover {
+      color: #f5f5f5;
+      background-color: transparent;
+    }
+    &:active {
+      color: #fd79fc;
+      background-color: transparent;
+    }
+
+    mat-icon {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.navbar .navbar-nav > .active > a  {
+  color: #f5f5f5;
+  background-color: transparent;
+}
+
+@-webkit-keyframes neonOne {
+  from {
+    text-shadow: 0 0 10px #9397d8, 0 0 14px #9397d8, 0 0 20px #9397d8, 0 0 30px #66d9f7, 0 0 40px #66d9f7;
+  }
+  to {
+    text-shadow: 0 0 5px #9397d8, 0 0 7px #9397d8, 0 0 10px #9397d8, 0 0 15px #66d9f7, 0 0 20px #66d9f7;
+  }
+}
