@@ -1,20 +1,32 @@
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MaterialModule } from './modules/material.module';
 
 import { RootComponent } from './root.component';
-import { NavbarComponentComponent } from './components/navbar-component/navbar-component.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HtmlSanitizerPipe } from './pipes/html-sanitizer';
+
+const routes: Routes = [
+  { path: '', component: RootComponent }];
 
 @NgModule({
   declarations: [
     RootComponent,
-    NavbarComponentComponent
+    NavbarComponent,
+    HtmlSanitizerPipe
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
-    HttpModule
+    FlexLayoutModule,
+    MaterialModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [RootComponent]
