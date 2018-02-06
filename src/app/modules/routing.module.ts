@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
-import { RootComponent } from '../root.component';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from '../components/home/home.component';
 
 const routes: Routes = [
-  { path: '', component: RootComponent },
+  { path: '', component: HomeComponent },
   { path: 'races', loadChildren: './modules/race.module#RaceModule'}];
-
 
 @NgModule({
   imports: [
