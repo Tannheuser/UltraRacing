@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from '../../model/menuItem';
+import { MenuItem } from '../../../model/menuItem';
 
 @Component({
   selector: 'ur-navbar',

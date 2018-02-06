@@ -2,17 +2,15 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from './modules/material.module';
 
 import { RootComponent } from './root.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { NavbarComponent } from './components/navigation/navbar/navbar.component';
 import { HtmlSanitizerPipe } from './pipes/html-sanitizer';
+import { RoutingModule } from './modules/routing.module';
 
-const routes: Routes = [
-  { path: '', component: RootComponent }];
 
 @NgModule({
   declarations: [
@@ -26,7 +24,7 @@ const routes: Routes = [
     FormsModule,
     FlexLayoutModule,
     MaterialModule,
-    RouterModule.forRoot(routes)
+    RoutingModule
   ],
   providers: [],
   bootstrap: [RootComponent]
