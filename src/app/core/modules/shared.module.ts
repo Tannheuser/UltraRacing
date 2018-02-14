@@ -1,11 +1,13 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
+import { HtmlSanitizerPipe } from '@app/core/pipes/html-sanitizer';
+
 @NgModule({
-  imports: [
-    CommonModule
+  declarations: [
+    HtmlSanitizerPipe
   ],
   exports: [
     CommonModule,
