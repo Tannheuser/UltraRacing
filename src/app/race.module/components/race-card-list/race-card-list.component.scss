@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.race-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

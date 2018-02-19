@@ -1,5 +1,10 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
-  min-width: 1200px;
+  display: flex;
 }
 
 .heading {
@@ -10,6 +15,7 @@
   background-repeat: no-repeat, repeat-x;
   height: 200px;
   position: relative;
+  justify-content: center;
 
   h1 {
     text-align: center;

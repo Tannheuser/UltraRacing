@@ -1,0 +1,24 @@
+<a [routerLink]="['/races', race.id]" fxFlex>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{race.name}}</mat-card-title>
+      <mat-card-subtitle *ngIf="race.date">
+        <div fxLayout fxLayoutGap="10px" fxFlex>
+          <mat-icon>access_time</mat-icon>
+          <span>{{race.date | date:'d MMM y'}}</span>
+          <div fxFlex></div>
+          <span>{{race.entryFee | currency:'USD':true}}</span>
+        </div>
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <img mat-card-sm-image *ngIf="race.image" [src]="race.image"/>
+      <p *ngIf="race.about">{{race.about}}</p>
+    </mat-card-content>
+    <mat-card-footer>
+    </mat-card-footer>
+    <mat-card-actions fxLayout fxLayoutAlign="center">
+      <button mat-raised-button color="primary">Enter Race</button>
+    </mat-card-actions>
+  </mat-card>
+</a>
