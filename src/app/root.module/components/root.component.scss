@@ -1,15 +1,21 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
-  min-width: 1200px;
+  display: flex;
 }
 
 .heading {
   background-color: #9d1a76;
-  background-image: url('../assets/img/head.jpg');
+  background-image: url('../../../assets/img/head.jpg');
   background-position: bottom, center;
   background-size: auto, auto;
   background-repeat: no-repeat, repeat-x;
   height: 200px;
   position: relative;
+  justify-content: center;
 
   h1 {
     text-align: center;

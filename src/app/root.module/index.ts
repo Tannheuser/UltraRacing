@@ -3,20 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MaterialModule } from './modules/material.module';
+import { MaterialModule } from '../core/modules/material.module';
 
-import { RootComponent } from './root.component';
+import { RootComponent } from './components/root.component';
 import { NavbarComponent } from './components/navigation/navbar/navbar.component';
-import { HtmlSanitizerPipe } from './pipes/html-sanitizer';
-import { RoutingModule } from './modules/routing.module';
+import { RoutingModule } from './routing.module';
 import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
-    RootComponent,
+    HomeComponent,
     NavbarComponent,
-    HtmlSanitizerPipe,
-    HomeComponent
+    RootComponent
   ],
   imports: [
     BrowserAnimationsModule,
