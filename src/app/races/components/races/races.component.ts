@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import orderBy from 'lodash-es/orderBy';
 
 import { Race } from '@app/races/model';
 import { Races } from '@app/mock';
@@ -14,6 +15,6 @@ export class RacesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.races = Races.reverse(race => race.date);
+    this.races = orderBy(Races, ['date']);
   }
 }

@@ -4,13 +4,6 @@
   text-shadow: 2px 1px $shadowPurple;
 }
 
-%neon-head-from {
-
-}
-
-%neon-head-to {
-}
-
 %neon-item {
   from {
     text-shadow: 0 0 10px $pureWhite, 0 0 14px $pureWhite, 0 0 20px $pureWhite, 0 0 30px $shadowPurple, 0 0 40px $shadowPurple;
@@ -19,4 +12,9 @@
   to {
     text-shadow: 0 0 5px $pureWhite, 0 0 7px $pureWhite, 0 0 10px $pureWhite, 0 0 15px $shadowPurple, 0 0 20px $shadowPurple;
   }
+}
+
+%thin-uppercase {
+  font-weight: 300;
+  text-transform: uppercase;
 }

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 @import 'variables';
+@import 'extends';
 
 * {
   font-family: 'Lato', sans-serif;
@@ -17,16 +18,26 @@ body {
   height: 100%;
 }
 
-h1 {
-  color: $skyBlue;
-}
-
 button {
   background: $glamPink;
   border-radius: 3px;
   border: 0;
   color: $pureWhite;
   width: 120px;
+}
+
+.section-title {
+  @extend %thin-uppercase;
+
+  color: $skyBlue;
+  font-size: 20px;
+  padding: 20px 30px;
+  text-align: center;
+
+  span {
+    padding: 4px;
+    border-bottom: 1px solid rgba(102,217,247,0.3);
+  }
 }
 
 .mat-card-header-text {
