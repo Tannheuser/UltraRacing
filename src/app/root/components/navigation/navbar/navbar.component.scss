@@ -10,15 +10,14 @@
 
   .heading {
     @extend %shadowed-text;
+    @extend %thin-uppercase;
 
-    font-weight: 300;
-    text-transform: uppercase;
     color: $skyBlue;
 
     a {
       @include animation(neonHead 1.5s ease-in-out infinite alternate);
 
-      font-size: 20px;
+      font-size: 24px;
       background-color: transparent;
     }
   }
@@ -36,12 +35,12 @@
   }
 
   a {
+    @extend %thin-uppercase;
+
     cursor: pointer;
     text-decoration: none;
-    text-transform: uppercase;
     color: $skyBlue;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 20px;
 
     &:hover {
       @include animation(neonItem 1.5s ease-in-out infinite alternate);
@@ -55,8 +54,8 @@
     }
 
     mat-icon {
-      font-size: 18px;
-      margin-top: 10px;
+      font-size: 22px;
+      margin-top: 6px;
     }
   }
 }

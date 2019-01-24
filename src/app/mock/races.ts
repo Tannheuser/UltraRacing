@@ -2,22 +2,22 @@ import {Race} from '@app/races/model';
 
 export const Races: Race[] = [{
   id: '1',
-  name: 'Daytona thunderdome',
-  date: new Date('2019-02-28T14:00:00'),
-  about: 'Race through the ruins of an ancient Florida battle arena.',
+  name: 'Paris taxi competition',
+  date: new Date('2019-02-18T14:00:00'),
+  about: 'Beat the record of Daniel from \'Taxi\' movie.',
   entryFee: 1100,
   isRacing: false,
-  image: '/assets/img/daytona_thunderdome.jpg',
-  imageDescription: 'Race track with laser lanes'
+  image: '/assets/img/paris.png',
+  imageDescription: 'Paris neon panorama'
 }, {
   id: '2',
   name: 'San Francisco ruins',
-  date: new Date('2019-02-14T23:00:00'),
+  date: new Date('2019-02-24T23:00:00'),
   about: 'Drift down the streets of a city almost sunk under the ocean.',
   entryFee: 500,
   isRacing: true,
   image: '/assets/img/san_francisco.jpg',
-  imageDescription: 'Golden Gate Bridge with lasers'
+  imageDescription: 'San Francisco neon panorama'
 }, {
   id: '3',
   name: 'New York City skyline',
@@ -25,8 +25,8 @@ export const Races: Race[] = [{
   about: 'Fly between buildings in the electronic sky.',
   entryFee: 1500,
   isRacing: true,
-  image: '/assets/img/new_york_city_skyline.jpg',
-  imageDescription: 'Bridge overlooking New York City'
+  image: '/assets/img/new_york.png',
+  imageDescription: 'New York neon panorama'
 }, {
   id: '4',
   name: 'London royal race',
@@ -34,16 +34,16 @@ export const Races: Race[] = [{
   about: 'Royal wagon with 300 HP under the hood.',
   entryFee: 1700,
   isRacing: true,
-  image: '/assets/img/london.jpg',
+  image: '/assets/img/london.png',
   imageDescription: 'Neon styled panorama of London'
 },
 {
   id: '5',
-  name: 'Kremlin rage (Moscow city)',
+  name: 'Kremlin rage',
   date: new Date('2019-01-28T00:00:00'),
-  about: 'Vodka, matryoshka and portion of adrenaline.',
+  about: 'Race from the old walls of Kremlin to modern skylines of City.',
   entryFee: 2000,
   isRacing: true,
-  image: '/assets/img/moscow_city.jpg',
+  image: '/assets/img/moscow.png',
   imageDescription: 'Moscow city'
 }];
