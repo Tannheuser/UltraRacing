@@ -1,5 +1,6 @@
 @import '~sass/variables';
 @import '~sass/extends';
+@import '~sass/mixins';
 
 .mat-toolbar {
   background: none;
@@ -12,17 +13,13 @@
 
     font-weight: 300;
     text-transform: uppercase;
-    color: #66d9f7;
+    color: $skyBlue;
 
     a {
+      @include animation(neonHead 1.5s ease-in-out infinite alternate);
+
       font-size: 20px;
       background-color: transparent;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      transition: all 0.5s;
-      -webkit-animation: neonHead 1.5s ease-in-out infinite alternate;
-      -moz-animation: neonHead 1.5s ease-in-out infinite alternate;
-      animation: neonHead 1.5s ease-in-out infinite alternate;
     }
   }
 
@@ -42,20 +39,18 @@
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
-    color: #66d9f7;
+    color: $skyBlue;
     font-size: 16px;
     font-weight: 300;
 
     &:hover {
-      color: #f5f5f5;
-      background-color: transparent;
-      -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon5 1.5s ease-in-out infinite alternate;
-      animation: neon5 1.5s ease-in-out infinite alternate;
+      @include animation(neonItem 1.5s ease-in-out infinite alternate);
 
+      color: $pureWhite;
+      background-color: transparent;
     }
     &:active {
-      color: #fd79fc;
+      color: $glamPink;
       background-color: transparent;
     }
 
@@ -66,61 +61,20 @@
   }
 }
 
-.navbar .navbar-nav > .active > a  {
-  color: #f5f5f5;
-  background-color: transparent;
-}
-
-@keyframes neonHead {
+@include keyframes(neonHead) {
   from {
-    text-shadow: 0 0 10px #9397d8, 0 0 14px #9397d8, 0 0 20px #9397d8, 0 0 30px #66d9f7, 0 0 40px #66d9f7;
+    text-shadow: 0 0 10px $shadowPurple, 0 0 14px $shadowPurple, 0 0 20px $shadowPurple, 0 0 30px $skyBlue, 0 0 40px $skyBlue;
   }
   to {
-    text-shadow: 0 0 5px #9397d8, 0 0 7px #9397d8, 0 0 10px #9397d8, 0 0 15px #66d9f7, 0 0 20px #66d9f7;
+    text-shadow: 0 0 5px $shadowPurple, 0 0 7px $shadowPurple, 0 0 10px $shadowPurple, 0 0 15px $skyBlue, 0 0 20px $skyBlue;
   }
 }
 
-@-webkit-keyframes neonHead {
+@include keyframes(neonItem) {
   from {
-    text-shadow: 0 0 10px #9397d8, 0 0 14px #9397d8, 0 0 20px #9397d8, 0 0 30px #66d9f7, 0 0 40px #66d9f7;
+    text-shadow: 0 0 10px $pureWhite, 0 0 14px $pureWhite, 0 0 20px $pureWhite, 0 0 30px $shadowPurple, 0 0 40px $shadowPurple;
   }
   to {
-    text-shadow: 0 0 5px #9397d8, 0 0 7px #9397d8, 0 0 10px #9397d8, 0 0 15px #66d9f7, 0 0 20px #66d9f7;
-  }
-}
-
-@-moz-keyframes neonHead {
-  from {
-    text-shadow: 0 0 10px #9397d8, 0 0 14px #9397d8, 0 0 20px #9397d8, 0 0 30px #66d9f7, 0 0 40px #66d9f7;
-  }
-  to {
-    text-shadow: 0 0 5px #9397d8, 0 0 7px #9397d8, 0 0 10px #9397d8, 0 0 15px #66d9f7, 0 0 20px #66d9f7;
-  }
-}
-
-@-webkit-keyframes neonItem {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
-  }
-}
-
-@-moz-keyframes neonItem {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
-  }
-}
-
-@keyframes neonItem {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    text-shadow: 0 0 5px $pureWhite, 0 0 7px $pureWhite, 0 0 10px $pureWhite, 0 0 15px $shadowPurple, 0 0 20px $shadowPurple;
   }
 }
