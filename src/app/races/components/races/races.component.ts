@@ -14,6 +14,6 @@ export class RacesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.races = Races;
+    this.races = Races.reverse(race => race.date);
   }
 }

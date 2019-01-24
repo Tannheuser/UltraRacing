@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=cyrillic');
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import 'variables';
 
 * {
   font-family: 'Lato', sans-serif;
@@ -12,19 +13,19 @@ html {
 
 body {
   background: linear-gradient(#0d263c,#030714) no-repeat fixed;
-  color: #ffffff;
+  color: $pureWhite;
   height: 100%;
 }
 
 h1 {
-  color: #66d9f7;
+  color: $skyBlue;
 }
 
 button {
-  background: #fd79fc;
+  background: $glamPink;
   border-radius: 3px;
   border: 0;
-  color: #ffffff;
+  color: $pureWhite;
   width: 120px;
 }
 
