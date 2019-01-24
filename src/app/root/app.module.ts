@@ -2,8 +2,7 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MaterialModule } from '../core/modules/material.module';
+import { MaterialModule } from '@app/core';
 
 import { RootComponent } from './components/root.component';
 import { NavbarComponent } from './components/navigation/navbar/navbar.component';
@@ -19,7 +18,6 @@ import { HomeComponent } from './components/home/home.component';
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
-    FlexLayoutModule,
     MaterialModule,
     RoutingModule
   ],

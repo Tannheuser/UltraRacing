@@ -1,4 +1,4 @@
-import { Race } from '@app/race.module/model/race';
+import { Race } from '@app/races/model';
 
 export const Races: Race[] = [{
   id: '1',

@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { HtmlSanitizerPipe } from '@app/core/pipes/html-sanitizer';
+import { HtmlSanitizerPipe } from '@app/core/pipes';
 
 @NgModule({
   declarations: [

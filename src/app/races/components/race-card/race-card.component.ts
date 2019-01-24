@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { Race } from '@app/race.module/model/race';
+import { Race } from '@app/races/model';
 
 @Component({
   selector: 'ur-race-card',

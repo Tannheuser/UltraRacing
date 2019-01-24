@@ -1,3 +1,2 @@
-export * from './modules/material.module';
-export * from './modules/shared.module';
-export * from './pipes/html-sanitizer';
+export * from './material.module';
+export * from './shared.module';

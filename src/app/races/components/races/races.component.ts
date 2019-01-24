@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Race } from '@app/race.module/model/race';
+import { Race } from '@app/races/model';
 import { Races } from '@app/mock';
 
 @Component({
