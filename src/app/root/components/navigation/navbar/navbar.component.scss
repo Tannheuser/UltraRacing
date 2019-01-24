@@ -1,6 +1,30 @@
+@import '~sass/variables';
+@import '~sass/extends';
+
 .mat-toolbar {
   background: none;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+
+  .heading {
+    @extend %shadowed-text;
+
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #66d9f7;
+
+    a {
+      font-size: 20px;
+      background-color: transparent;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      transition: all 0.5s;
+      -webkit-animation: neonHead 1.5s ease-in-out infinite alternate;
+      -moz-animation: neonHead 1.5s ease-in-out infinite alternate;
+      animation: neonHead 1.5s ease-in-out infinite alternate;
+    }
+  }
 
   .navigation-items {
     display: flex;
@@ -21,17 +45,14 @@
     color: #66d9f7;
     font-size: 16px;
     font-weight: 300;
-    background-color: transparent;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-    -webkit-animation: neonOne 1.5s ease-in-out infinite alternate;
-    -moz-animation: neonOne 1.5s ease-in-out infinite alternate;
-    animation: neonOne 1.5s ease-in-out infinite alternate;
 
     &:hover {
       color: #f5f5f5;
       background-color: transparent;
+      -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+      -moz-animation: neon5 1.5s ease-in-out infinite alternate;
+      animation: neon5 1.5s ease-in-out infinite alternate;
+
     }
     &:active {
       color: #fd79fc;
@@ -50,11 +71,56 @@
   background-color: transparent;
 }
 
-@-webkit-keyframes neonOne {
+@keyframes neonHead {
   from {
     text-shadow: 0 0 10px #9397d8, 0 0 14px #9397d8, 0 0 20px #9397d8, 0 0 30px #66d9f7, 0 0 40px #66d9f7;
   }
   to {
     text-shadow: 0 0 5px #9397d8, 0 0 7px #9397d8, 0 0 10px #9397d8, 0 0 15px #66d9f7, 0 0 20px #66d9f7;
+  }
+}
+
+@-webkit-keyframes neonHead {
+  from {
+    text-shadow: 0 0 10px #9397d8, 0 0 14px #9397d8, 0 0 20px #9397d8, 0 0 30px #66d9f7, 0 0 40px #66d9f7;
+  }
+  to {
+    text-shadow: 0 0 5px #9397d8, 0 0 7px #9397d8, 0 0 10px #9397d8, 0 0 15px #66d9f7, 0 0 20px #66d9f7;
+  }
+}
+
+@-moz-keyframes neonHead {
+  from {
+    text-shadow: 0 0 10px #9397d8, 0 0 14px #9397d8, 0 0 20px #9397d8, 0 0 30px #66d9f7, 0 0 40px #66d9f7;
+  }
+  to {
+    text-shadow: 0 0 5px #9397d8, 0 0 7px #9397d8, 0 0 10px #9397d8, 0 0 15px #66d9f7, 0 0 20px #66d9f7;
+  }
+}
+
+@-webkit-keyframes neonItem {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+
+@-moz-keyframes neonItem {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+
+@keyframes neonItem {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
   }
 }
